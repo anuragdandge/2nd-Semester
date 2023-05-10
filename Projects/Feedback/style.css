@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: .5px solid red;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav > h3 {
+    padding: 10px ;
+    margin: 5px ;
+}
+.main{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+    border-radius: 20px ;
+    height: 80%;
+    width: 80%;
+}
+.main > .container > h2{
+    margin-top: 20px;
+    font-family: cursive;
+    text-align:  center;
+}
+.form{
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+
+}
