@@ -30,7 +30,6 @@ Default (F), dely_date can not be less than order_date, order_status values (‘
 2. Drop table sales_order_details
 
 
-
 ---
 
 # Assignment III : Implementation of DML commands 

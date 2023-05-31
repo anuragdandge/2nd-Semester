@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Enter A number " num 
 fact=1
 

@@ -24,4 +24,3 @@ echo "Addition of $num5+$num6 = $sum"
 read -p "Enter first Num :" a
 read -p "Enter second Num :" b
 echo "Addition of $a+$b = $(($a + $b))"
-

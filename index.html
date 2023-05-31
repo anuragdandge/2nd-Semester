@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<body> -->
+<!-- <py-script>
+import requests
+
+API_KEY = '8c49b1672791011431b00c6c4b458138'  # Replace with your own API key
+URL = 'http://api.openweathermap.org/data/2.5/weather'
+
+def get_weather(city):
+    params = {
+        'q': city,
+        'appid': API_KEY,
+        'units': 'metric'
+    }
+    response = requests.get(URL, params=params)
+    data = response.json()
+    if data['cod'] == 200:
+        weather = {
+            'description': data['weather'][0]['description'],
+            'temperature': data['main']['temp'],
+            'humidity': data['main']['humidity'],
+            'wind_speed': data['wind']['speed']
+        }
+        return weather
+    else:
+        print('Error:', data['message'])
+        return None
+
+weather = get_weather('London')
+print(weather)
+    </py-script> -->
+
+<!-- <py-script src="weather.py"></py-script>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Integration</title>
+</head>
+<body>
+    <h1>Python Integration</h1>
+    <p id="output"></p>
+    <button onclick="runPython()">Run Python</button>
+    <script>
+        function runPython() {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        const response = xhr.responseText;
+                        document.getElementById("output").innerHTML = response;
+                    } else {
+                        console.log('Error');
+                    }
+                }
+            };
+            xhr.open('GET', 'weather.py');
+            xhr.send();
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
