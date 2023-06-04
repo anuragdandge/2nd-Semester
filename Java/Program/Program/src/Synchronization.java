@@ -1,11 +1,11 @@
-class Account{
-    public Account(){
+// class Account{
+//     public Account(){
 
-    }
-}
+//     }
+// }
 
-public class Synchronization{
+// public class Synchronization{
 
 
-    // public void 
-}
+//     // public void 
+// }

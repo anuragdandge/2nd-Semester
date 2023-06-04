@@ -2,6 +2,7 @@
     "files.associations": {
         "\"*.css\" ": "\"tailwindcss\"",
         "Assign1.C": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "Assign2.C": "cpp"
     }
 }

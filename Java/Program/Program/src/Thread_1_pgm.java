@@ -27,3 +27,27 @@ public class Thread_1_pgm {
 
     }
 }
+
+
+// Output :
+
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
+// Hello Friends
+// Welcome to java Programming
