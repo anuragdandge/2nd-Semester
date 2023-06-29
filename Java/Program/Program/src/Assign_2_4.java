@@ -1,4 +1,4 @@
-// // Write a program which will accept file name from command line and will show the content of the file
+// Write a program which will accept file name from command line and will show the content of the file
 
 // import java.io.*;
 // import java.util.Scanner;

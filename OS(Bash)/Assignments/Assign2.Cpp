@@ -5,8 +5,7 @@
 //     int AT, WT, TT, BT;
 // };
 // struct process a[10];
-// int main()
-// {
+// int main(){
 //     int n;
 //     int burst = 0, cmpl_T;
 //     float Avg_WT, Avg_TT, Total = 0;
@@ -106,7 +105,7 @@
 //     printf("Avg turn around time of the process %f\n", Avg_TAT);
 // }
 // Priority
-// #include <stdio.h> 
+// #include <stdio.h>
 // struct process{
 //     int WT, AT, BT, TAT, PT;
 // };
@@ -136,7 +135,7 @@
 //             }
 //         }
 //         a[short_p].BT = a[short_p].BT - 1;
-//         // any process completed 
+//         // any process completed
 //         if(a[short_p].BT==0)
 //         {
 //             count++;
@@ -148,7 +147,7 @@
 //     }
 //     Avg_WT = total_WT / n;
 //     Avg_TAT = total_TAT / n;
-//     // printing of the answer 
+//     // printing of the answer
 //     printf("ID WT TAT\n");
 //     for (int i = 0; i < n; i++)
 //     {
@@ -159,5 +158,49 @@
 //     return 0;
 // }
 
-// Round Robin 
+// Round Robin
+//  P BT  AT
+// p1 6   2
+// p2 2   5
+// p3 8   1
+// p4 3   0
+// p5 4   4
+//    23
+#include <iostream>
+using namespace std;
+int main()
+{
+    int no_of_process=0, quantum=0, total_time=0;
+    cout << "\n Enter the Number Process : ";
+    cin >> no_of_process;
+    cout << "\n Enter Quantum : ";
+    cin >> quantum;
+    int burst_time[no_of_process], arrival_time[no_of_process];
+    cout << "\n Enter Burst Time & Arrival Time for process ";
+    for (int i = 0; i < no_of_process; i++)
+    {
+        cout << "\n  Burst Time of Process " << i + 1 << " : ";
+        cin >> burst_time[i];
+        cout << " Arrival Time " << i + 1 << " : ";
+        cin >> arrival_time[i];
+    }
 
+    cout << " Process ID\t Burst Time\t Arrival Time ";
+    for (int i = 0; i < no_of_process; i++)
+    {
+        cout << "\n\tP" << i << "\t\t" << burst_time[i] << "\t\t" << arrival_time[i];
+        total_time += burst_time[i];
+    }
+    cout << "\n Gantt Chart : ";
+    cout << "\n Total Time =  " << total_time << "\n";
+    int count = 0;
+    int queue[no_of_process];
+    
+    while (count < total_time)
+    {
+        if (count > total_time)
+            break;
+
+        count++;
+    }
+}

@@ -3,6 +3,10 @@
         "\"*.css\" ": "\"tailwindcss\"",
         "Assign1.C": "cpp",
         "stdio.h": "c",
-        "Assign2.C": "cpp"
-    }
+        "Assign2.C": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
