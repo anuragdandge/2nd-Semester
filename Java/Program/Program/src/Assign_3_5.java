@@ -24,7 +24,6 @@ public class Assign_3_5 extends JFrame {
         f.add(add);
         add.addActionListener(new ActionListener() {
             private Integer temp1, temp2;
-
             public void actionPerformed(ActionEvent e) {
                 temp1 = Integer.parseInt(t1.getText());
                 temp2 = Integer.parseInt(t2.getText());
@@ -32,11 +31,8 @@ public class Assign_3_5 extends JFrame {
                 res.setText(temp1.toString());
             }
         });
-
-        
         f.setSize(200, 200);
         f.setLayout(new BorderLayout());
         f.setVisible(true);
-
     }
 }

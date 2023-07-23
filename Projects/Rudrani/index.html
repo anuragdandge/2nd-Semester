@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Excel Viewer</title>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <input type="file" id="excel-file" accept=".xlsx, .xls" />
+  <div id="excel-data"></div>
+
+  <script>
+    var input = document.getElementById('excel-file');
+
+    input.addEventListener('change', function (e) {
+      var file = e.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        var data = new Uint8Array(e.target.result);
+        var workbook = XLSX.read(data, { type: 'array' });
+        var sheetName = workbook.SheetNames[0];
+        var worksheet = workbook.Sheets[sheetName];
+        var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+        var excelData = document.getElementById('excel-data');
+        excelData.innerHTML = '';
+        
+        for (var i = 0; i < jsonData.length; i++) {
+          var row = document.createElement('div');
+          row.innerHTML = jsonData[i].join(' | ');
+          excelData.appendChild(row);
+        }
+      };
+
+      reader.readAsArrayBuffer(file);
+    });
+  </script>
+</body>
+</html>

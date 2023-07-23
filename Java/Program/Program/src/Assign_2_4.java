@@ -28,7 +28,6 @@
 // // }
 
 import java.io.*;
-
 public class Assign_2_4 {
     public static void main(String[] args) {
         // Check if the file name is provided as a command line argument

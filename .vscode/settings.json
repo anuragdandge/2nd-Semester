@@ -6,7 +6,10 @@
         "Assign2.C": "cpp",
         "bitset": "cpp",
         "chrono": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "PreemptivePriority.C": "cpp",
+        "NonPreemptiveSJF.C": "cpp",
+        "nik.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

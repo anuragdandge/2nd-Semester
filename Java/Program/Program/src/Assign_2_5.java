@@ -11,7 +11,6 @@ public class Assign_2_5 {
             System.out.println("Please provide two or more file names as command line arguments.");
             System.exit(1);
         }
-
         String outputFileName = args[0];
 
         try (FileOutputStream fos = new FileOutputStream(outputFileName);

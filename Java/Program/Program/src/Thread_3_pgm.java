@@ -33,21 +33,11 @@ class Account extends Thread {
 public class Thread_3_pgm {
     public static void main(String[] args) {
         Account a = new Account(100, 031001);
-        Thread w1 = new Thread(() -> {
-            a.Withdraw(20);
-        });
-        Thread w2 = new Thread(() -> {
-            a.Withdraw(40);
-        });
-        Thread w3 = new Thread(() -> {
-            a.Withdraw(60);
-        });
-        Thread d1 = new Thread(() -> {
-            a.Deposit(30);
-        });
-        Thread d2 = new Thread(() -> {
-            a.Deposit(80);
-        });
+        Thread w1 = new Thread(() -> {a.Withdraw(20);});
+        Thread w2 = new Thread(() -> {a.Withdraw(40);});
+        Thread w3 = new Thread(() -> {a.Withdraw(60);});
+        Thread d1 = new Thread(() -> {a.Deposit(30);});
+        Thread d2 = new Thread(() -> {a.Deposit(80);});
         try {
             d1.start();
             w2.start();

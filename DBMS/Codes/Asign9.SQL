@@ -1,11 +1,11 @@
 -- Create a table and perform the following
 
 
--- INSERT INTO CUSTOMER VALUES (CUSTOMER_NAME=:CUSTOMER_NAME,CUSTOMER_ADDRESS=:CUSTOMER_ADDRESS,CUSTOMER_SAL=:CUSTOMER_SAL);
-
 -- 1. Increase salary of each customer by 5000
 
 CREATE TABLE CUSTOMER(CUSTOMER_NAME VARCHAR(30),CUSTOMER_ADDRESS VARCHAR(50),CUSTOMER_SAL NUMBER(8,2));
+
+INSERT INTO CUSTOMER VALUES (CUSTOMER_NAME=:CUSTOMER_NAME,CUSTOMER_ADDRESS=:CUSTOMER_ADDRESS,CUSTOMER_SAL=:CUSTOMER_SAL);
 
 DECLARE  
    total_rows number(2); 
@@ -23,9 +23,10 @@ END;
 
 SELECT * FROM CUSTOMER;
 
+DELETE  FROM CUSTOMER;
 
 
--- 2. Write a program to retrieve the customer name and address
+-- 2. Write a program to retrieve the customer name and address 
 
 DECLARE 
    c_name CUSTOMER.CUSTOMER_NAME%type; 

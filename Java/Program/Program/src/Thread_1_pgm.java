@@ -26,7 +26,6 @@ public class Thread_1_pgm {
         t2.setPriority(Thread.MAX_PRIORITY);
         t2.run();
         t1.run();
-
     }
 }
 

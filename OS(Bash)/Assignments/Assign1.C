@@ -1,21 +1,21 @@
 // Q1) To write C programs using the following system calls of UNIX operating system fork, exex, getpid, exit, wait,
 // close, stat, opendir, closedir
-// #include <stdio.h>
-// #include <sys/stat.h>
-// int main()
-// {
-//     struct stat sb;
-//     if (stat("D:\\MCA (Modern)\\2nd Semester\\OS(Bash)\\Assignments\\test.txt", &sb) == 0)
-//     {
-//         printf("File size: %ld bytes\n", sb.st_size);
-//         printf("File mode: %o\n", sb.st_mode & 0777);
-//     }
-//     else
-//     {
-//         printf("Could not get file information\n");
-//     }
-//     return 0;
-// }
+#include <stdio.h>
+#include <sys/stat.h>
+int main()
+{
+    struct stat sb;
+    if (stat("D:\\MCA (Modern)\\2nd Semester\\OS(Bash)\\Assignments\\test.txt", &sb) == 0)
+    {
+        printf("File size: %ld bytes\n", sb.st_size);
+        printf("File mode: %o\n", sb.st_mode & 0777);
+    }
+    else
+    {
+        printf("Could not get file information\n");
+    }
+    return 0;
+}
 
 // #include <stdio.h>
 // #include <dirent.h>

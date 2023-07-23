@@ -2,6 +2,7 @@ interface  methods{
     public void push();
     public void pop();
     public void print();
+    public int cal();
 }
 
 class Stack {
@@ -26,6 +27,10 @@ class Stack {
         }
     }
 
+    public int cal(int num){
+       return num+5; 
+    }
+
 }
 
 public class Stack_pgm {
@@ -41,5 +46,8 @@ public class Stack_pgm {
         nums.push(60);
         nums.push(70);
         nums.print();
+        System.out.println(nums.cal(5));
+        int temp= nums.cal(10);
+        System.out.println(temp);
     }
 }
